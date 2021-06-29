@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="/assets/images/house.png" type="images/png">
     <link rel="stylesheet" href="/assets/styles/style.css">
     <link rel="stylesheet" href="/assets/styles/normalize.css">
+    <link rel="stylesheet" href="/assets/styles/positioning.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.google.com/share?selection.family=Playfair%20Display%7CRaleway:wght@100" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -16,42 +17,50 @@
 
 <body>
     <header id="back_head">
-        <img class="logo" src="assets/images/first-screen__logo.svg" alt="logo">
-        <nav>
-            <a href="" class="menu">О комплексе</a>
-            <a href="" class="menu">Район</a>
-            <a href="" class="menu">Каталог квартир</a>
-            <a href="" class="menu">Ипотека</a>
-            <a href="" class="menu">Контакты</a>
-        </nav>
-
-        <h1 class="main_heading">Жилой комплекс в историческом центре</h1>
-        <img src="assets/images/mouse.svg" alt="mouse"><br />
-        <div>
-            <img src="assets/images/placeholder.svg" alt="placeholder">
-            <span class="contacts">Наб. реки Фонтанки 10-15</span>
+        <div id="positionmenu">
+            <img class="logo" src="assets/images/first-screen__logo.svg" alt="logo">
+            <nav>
+                <a href="" class="menu">О комплексе</a>
+                <a href="" class="menu">Район</a>
+                <a href="" class="menu">Каталог квартир</a>
+                <a href="" class="menu">Ипотека</a>
+                <a href="" class="menu">Контакты</a>
+            </nav>
         </div>
-        <div>
-            <img src="assets/images/phone-call.svg" alt="phone-call">
-            <span class="contacts">8 (812) 123-45-67</span>
+
+        <div id="first_imp">
+            <div id="heading">
+                <h1 class="main_heading">Жилой комплекс в историческом центре</h1>
+                <img src="assets/images/mouse.svg" alt="mouse">
+            </div>
+            <div id="contacts">
+                <div>
+                    <img src="assets/images/placeholder.svg" alt="placeholder"> &nbsp;
+                    <span class="contacts">Наб. реки Фонтанки 10-15</span>
+                </div>
+                <div>
+                    <img src="assets/images/phone-call.svg" alt="phone-call"> &nbsp;
+                    <span class="contacts">8 (812) 123-45-67</span>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <section>
-            <figure>
+        <section id="numII">
+            <figure class="about">
                 <img src="assets/images/bench.svg" alt="скамейка">
-                <figcaption class="text">Рядом исторические парки и скверы</figcaption>
+                <figcaption class="text" id="history">Рядом исторические парки и скверы</figcaption>
             </figure>
-            <figure>
+            <figure class="about">
                 <img src="assets/images/building.svg" alt="здание">
                 <figcaption class="text">Полностью обустроенный</figcaption>
             </figure>
-            <figure>
+            <figure class="about">
                 <img src="assets/images/fountain.svg" alt="фонтан">
-                <figcaption class="text">10 фонтанов территории</figcaption>
+                <figcaption class="text">10 фонтанов на территории</figcaption>
             </figure>
-            <figure>
+            <figure class="about">
                 <img src="assets/images/bicycle.svg" alt="велосипед">
                 <figcaption class="text">6 км велодорожек</figcaption>
             </figure>
@@ -60,39 +69,52 @@
 
         <article>
             <h2 class="heading">Наши квартиры</h2>
-            <img src="/assets/images/III.svg" alt="римская цифра три">
-            <div class="foto">Лофт — 3 этажа</div>
-            <div class="foto2">Лофт — 2 этажа</div>
-            <div class="foto">Лофт — 3 этажа</div>
-            <div class="foto2">Лофт — 2 этажа</div>
+            <img src="/assets/images/III.svg" alt="римская цифра три" class="num">
+            <div id="rooms">
+                <div class="foto">Лофт — 3 этажа</div>
+                <div class="foto2">Лофт — 2 этажа</div>
+                <div class="foto">Лофт — 3 этажа</div>
+                <div class="foto2">Лофт — 2 этажа</div>
+            </div>
 
             <section id="back_pic">
                 <h2 class="heading">Хотите посмотреть?</h2>
-                <p id="about">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
-                    является
-                    стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник
-                    создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+                <div id="orig_form">
+                    <div id="form1">
+                        <p id="about">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+                            Ipsum
+                            является
+                            стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
+                            печатник
+                            создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                            образцов.
+                        </p>
+                    </div>
 
-                <form action="path.ru" method="POST">
-                    <input type="text" value="Ваше имя" class="forms" />
-                    <input type="tel" value="Ваш телефон" class="forms" />
-                    <div class="attention">*Мы никому не передаем ваши данные.
-                        И не сохраняем ваш номер в базу.</div>
-                    <button class="push">Посмотреть район</button>
-                </form>
+                    <form action="path.ru" method="POST">
+                        <div id="form2">
+                            <input type="text" value="Ваше имя" class="forms" />
+                            <input type="tel" value="Ваш телефон" class="forms" />
+                            <div class="attention">*Мы никому не передаем ваши данные.
+                                И не сохраняем ваш номер в базу.</div>
+                            <button class="push">Посмотреть район</button>
+                        </div>
+                    </form>
+                </div>
             </section>
 
             <section>
                 <!-- Рекламный ролик -->
-                <video poster="/assets/images/video.png" src="/assets/video/Bongo_Cat.mp4" width="719" height="650"
-                    controls></video>
-                <img src="assets/images/IV.svg" alt="римская цифра четыре">
+                <div id="videoIV"><video poster="/assets/images/video.png" src="/assets/video/Bongo_Cat.mp4" width="719"
+                        height="650" controls></video>
+                    <img src="assets/images/IV.svg" alt="римская цифра четыре">
+                </div>
             </section>
 
             <section>
                 <h2 class="heading">Район на карте</h2>
-                <img src="/assets/images/V.svg" alt="римская цифра пять">
-                <div style="position:relative;overflow:hidden;"><a
+                <img src="/assets/images/V.svg" alt="римская цифра пять" class="num">
+                <div id="map" style="position:relative;overflow:hidden;"><a
                         href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
                         style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
                         href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_fontanki_10/Z0kYdQRoQEcPQFtjfXV1cnlnZw==/?ll=30.338928%2C59.943544&mode=search&sctx=ZAAAAAgAEAAaKAoSCc0DWOTXwUJAER1yM9yA90tAEhIJAAAAAIAdtz8RAAi6LlGznT8oCjgAQNYBSAFqAnJ1cACdAc3MTD2gAQCoAQC9AVgLLnDCAQEA6gEA8gEA%2BAEAggIn0J3QsNCxLiDRgNC10LrQuCDQpNC%2B0L3RgtCw0L3QutC4IDEwLTE1igIA&sll=30.338928%2C59.943544&sspn=0.015312%2C0.004133&text=%D0%9D%D0%B0%D0%B1.%20%D1%80%D0%B5%D0%BA%D0%B8%20%D0%A4%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%BA%D0%B8%2010-15&utm_medium=mapframe&utm_source=maps&z=16.56"
@@ -105,18 +127,20 @@
 
             <section>
                 <h2 class="heading">Есть вопросы?</h2>
-                <div class="attention">*Мы никому не передаем ваши данные.
-                    И не сохраняем ваш номер в базу.</div>
-                <form action="path.ru" method="POST">
-                    <input type="text" value="Ваше имя" class="forms" />
-                    <input type="tel" value="Ваш телефон" class="forms" />
-                    <button class="push">Посмотреть район</button>
-                </form>
+                <div id="form_end">
+                    <div class="attention">*Мы никому не передаем ваши данные.
+                        И не сохраняем ваш номер в базу.</div>
+                    <form action="path.ru" method="POST" id="question">
+                        <input type="text" value="Ваше имя" class="forms" />
+                        <input type="tel" value="Ваш телефон" class="forms" />
+                        <button class="push">Посмотреть район</button>
+                    </form>
+                </div>
             </section>
         </article>
 
-        <footer>
-            <img src="assets/images/first-screen__logo.svg" alt="logo">
+        <footer id="position_footer">
+            <img src="assets/images/first-screen__logo.svg" alt="logo" id="logo_footer">
 
             <ul class="footer_menu">
                 <li><a href="" class="menu">О комплексе</a></li>
@@ -134,16 +158,17 @@
                 <li> <a href="" class="menu">Контакты</a></li>
             </ul>
 
-            <address>
-                <p id="address">Адрес: Наб. реки Фонтанки 10-15<br />
-                    Телефон: 8 (812) 123-45-67<br />
-                    Отдел продаж: 10:00 - 20:00<br />
-                    E-mail: <a href="mailto:vip@housevip.ru" id="email">vip@housevip.ru</a><br />
-                </p>
-                <a href=""><img src="assets/images/Vector.svg" alt="значок проигрывателя"></a>
-                <a href=""><img src="/assets/images/Group.svg" alt="значок ВКонтакта"></a>
-                <a href=""><img src="/assets/images/facebook-logo.svg" alt="значок facebook"></a>
-                <a href=""><img src="/assets/images/instagram.svg" alt="значок instagram"></a>
+            <address id="address_position">
+                <p class="address">Адрес: Наб. реки Фонтанки 10-15</p>
+                <p class="address">Телефон: 8 (812) 123-45-67</p>
+                <p class="address">Отдел продаж: 10:00 - 20:00</p>
+                <p class="address">E-mail: <a href="mailto:vip@housevip.ru" id="email">vip@housevip.ru</a></p>
+                <div id="social">
+                    <a href=""><img src="assets/images/Vector.svg" alt="значок проигрывателя"></a>
+                    <a href=""><img src="/assets/images/Group.svg" alt="значок ВКонтакта"></a>
+                    <a href=""><img src="/assets/images/facebook-logo.svg" alt="значок facebook"></a>
+                    <a href=""><img src="/assets/images/instagram.svg" alt="значок instagram"></a>
+                </div>
             </address>
         </footer>
 

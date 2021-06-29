@@ -1,0 +1,143 @@
+#positionmenu,
+#position_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#heading {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35vw;
+    margin-right: 35vw;
+}
+
+#first_imp {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#numII {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20vw;
+    margin-right: 10vw;
+}
+
+.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#rooms {
+    display: flex;
+    height: 80vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.num {
+    position: absolute;
+    margin-left: 10vw;
+}
+
+#form1 {
+    display: inline-flex;
+    width: 540px;
+    height: 135px;
+
+}
+
+#form2 {
+    display: inline-flex;
+    width: 540px;
+    height: 135px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#orig_form {
+    display: inline-flex;
+    justify-content: center;
+}
+
+#back_pic {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 560px;
+    background-image: url(/assets/images/backform.png);
+}
+
+#videoIV {
+    display: flex;
+    justify-content: center;
+    margin-left: 25vw;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+#form_end {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#question {
+    display: inline-flex;
+    width: 55vw;
+    justify-content: space-evenly;
+}
+
+#position_footer {
+    height: 272px;
+    margin-top: 15vh;
+    background-color: #2D343C;
+}
+
+#address_position {
+    margin-right: 10vw;
+}
+
+#logo_footer {
+    margin-left: 10vw;
+    margin-bottom: 12vh;
+}
+
+#social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_menu {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+}
